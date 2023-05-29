@@ -1,0 +1,53 @@
+﻿clauses
+
+ /* Football team (ID,name,hometown)*/
+team(01, "spartak", "moscow", 15).
+team(02, "csk", "moscow", 13).
+team(03, "dynamo", "moscow", 11).
+team(04, "zenit", "sanct_peterburg", 4).
+team(05, "kuban", "krasnodar", 17).
+team(06, "Rostov", "rostov_na_donu", 7).
+team(07, "rubin", "Kazan", 9).
+
+ /* Player (ID,IF,IDteam)*/
+player(01, "ilya_svinov", 01).
+player(02, "timur_akmurzin", 01).
+player(03, "alexandr_selikhov", 01).
+player(04, "skotnik_vsevolod", 02).
+player(05, "gamzin_dmitry", 02).
+player(06, "dits_darren", 02).
+player(07, "mikhail_kerzhakov", 03).
+player(08, "daniil_odoyevsky", 03).
+player(09, "alexandr_vasyutin", 03).
+player(10, "artem_ismagilov", 04).
+player(11, "yuriy_dyupin", 04).
+player(12, "alexandr_belenov", 04).
+player(13, "evdokimov_sergey", 05).
+player(14, "eshenko_uriy", 05).
+player(03, "nesterenko_azat", 05).
+player(15, "nikita_medvedev", 06).
+player(16, "evgeniy_chernov", 06).
+player(17, "aleksey_mironov", 06).
+player(18, "artem_ismagilov", 07).
+player(19, "yuriy_dyupin", 07).
+player(20, "alexandr_belenov", 07).
+
+ /* Stadium (ID,IDteam, name, address)*/
+stadium(01, 01, "otkritie_arena", "moskva_volokolamsko_shosse_69").
+stadium(02, 02, "arena_сsk", "moskva_3-ya_peschana_ulitsa_2a").
+stadium(03, 03, "arena_dinamo", "moskva_leningradskiy_pr-t_36").
+stadium(04, 04, "gazprom_arena", "sanct_peterburg_footbolnya_alley_1").
+stadium(05, 05, "stadion_cuban", "krasnodar_zheleznodorozhnya_49").
+stadium(06, 06, "rostov_arena", "rostov_na_donu_levoberezhnya_2b ").
+stadium(07, 07, "stadion_rubin", "kazankopylova_2").
+
+/* Match (ID, Date, 1st team score, 2nd team score, City, 1st team name, 2nd team name, Stadium ID)*/
+match(1, "2023-05-07", 3, 1, " moscow", "spartak", "csk", 2).
+match(2, "2023-05-08", 2, 4, " moscow", "dynamo", "Spartak", 3).
+match(01, "2023-07-01", 2, 1, " moscow", "spartak", "zenit", 1).
+match(02, "2023-07-10", 0, 1, " kazan", "dynamo", "Kuban", 7).
+match(03, "2023-07-22", 3, 2, " peter", "csk", "rubin", 4).
+match(04, "2023-07-22", 1, 0, "Rostov", "Rostov", "dynamo", 6).
+match(05, "2023-07-25", 2, 0, " rostov", "zenit", "Kuban", 6).
+match(06, "2023-07-10", 1, 1, " Moscow", "spartak", "rubin", 1).
+match(07, "2023-07-01", 3, 2, " peter", "csk", "rostov", 4).
